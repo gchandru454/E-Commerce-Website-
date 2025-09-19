@@ -6,8 +6,7 @@ export default function Home() {
   const navigate = useNavigate();
 
    const handleGoToProduct = () => {
-    navigate('/products'); // Navigates to the /about route
-  };
+    navigate('/products'); 
   return (
     <div
       className="min-h-screen flex flex-col items-center justify-center text-center bg-cover bg-center relative"
@@ -16,10 +15,10 @@ export default function Home() {
           "url('https://images.unsplash.com/photo-1586201375754-59a5d9a7b4d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80')",
       }}
     >
-      {/* Dark Overlay for Readability */}
+    
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
-      {/* Content */}
+     
       <div className="relative z-10 p-6">
         <h1 className="text-5xl font-extrabold text-white drop-shadow-lg">
           Welcome to <span className="text-yellow-400">MyShop</span>
