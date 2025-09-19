@@ -9,7 +9,7 @@ export default function CartDrawer() {
 
   return (
     <>
-      {/* 🛒 Floating Cart Button */}
+    
       <button
         onClick={() => setIsOpen(true)}
         className="fixed bottom-6 right-6 bg-blue-500 text-white p-4 rounded-full shadow-lg hover:bg-blue-600 transition"
@@ -17,7 +17,7 @@ export default function CartDrawer() {
         🛒 {cart.length}
       </button>
 
-      {/* Overlay */}
+     
       {isOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-40 z-40"
@@ -25,13 +25,13 @@ export default function CartDrawer() {
         ></div>
       )}
 
-      {/* Drawer */}
+     
       <div
         className={`fixed top-0 right-0 h-full w-80 bg-white shadow-2xl z-50 transform transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        {/* Header */}
+       
         <div className="flex justify-between items-center p-4 border-b">
           <h2 className="text-xl font-bold">Your Cart</h2>
           <button onClick={() => setIsOpen(false)} className="text-gray-600 text-xl">
